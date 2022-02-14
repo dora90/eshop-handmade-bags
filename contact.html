@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Handmade Bags</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap"
+      rel="stylesheet"
+    />
+
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#" id="logo"><img src="images/logo.png" alt=""></a>
+      <ul id="main-menu">
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="smallbags.html">Products</a>
+          <!-- <div class="sub-menu">
+            <ul>
+              <li><a href="smallbags.html">Small Bags</a></li>
+              <li><a href="differentbags.html#">Different Bags</a></li>
+              <li><a href="special.html">Special Edition</a></li>
+              <li><a href="wallet.html">Wallets</a></li>
+            </ul>
+          </div> -->
+        </li>
+
+        <!-- <li>
+          <a href="#">Themes</a>
+          <div class="sub-menu">
+            <ul>
+              <li><a href="free.html">Free</a></li>
+              <li><a href="extracharge.html">Extra Charge</a></li>
+            </ul>
+          </div>
+        </li> -->
+        <li><a href="contact.html">Contact</a></li>
+        <li class="bag"><a href="shoppingbag.html">🛒 <span>0</span></a></li>
+      </ul>
+
+      
+    </div>
+    <button class="hamburger">
+      <div class="bar"></div>
+    </button>
+    <nav class="mobile-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="smallbags.html">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="shoppingbag.html">🛒 <span>0</span></a></li>
+    </nav>
+
+
+<section class="form1">
+<div class="imgBx">
+    <img src="./images/IMG_20220210_075646.jpg">
+</div>
+<div class="contentBx">
+    <div class="formBx">
+        <h2 class="h2-form">Send us your Message</h2>
+        <form action="/sign-up" method="post" id="form" class="form">
+            <div class="form-body">
+              <label for="name" class="label">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Full name"
+                autocomplete="on"
+              />
+            </div>
+            <div class="form-body">
+              <label for="email"  class="label">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                autocomplete="on"
+              />
+              <div id="error"></div>
+            </div>
+            <div class="form-body, textarea">
+              <label for="subject" class="label">Your Message</label>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Your Message"
+              ></textarea>
+            </div>
+    
+            <button type="submit" id="btn">Submit</button>
+          </form>
+       
+    </div>
+</div>
+</section>
+
+    
+    <div class="footer">
+      <div class="social-container">
+        <h3 class="title-social">Follow us</h3>
+        <a href="https://www.facebook.com/" class="facebook social">
+          <i class="fab fa-facebook fa-3x"></i>
+        </a>
+        <a href="https://www.instagram.com/" class="instagram social">
+          <i class="fab fa-instagram fa-3x"></i>
+        </a>
+        <a href="https://www.twitter.com/" class="twitter social">
+          <i class="fab fa-twitter fa-3x"></i>
+        </a>
+        <a href="https://www.pinterest.com/" class="pinterest social">
+          <i class="fab fa-pinterest fa-3x"></i>
+        </a>
+      </div>
+    </div>
+    
+    <script src="./home.js"></script>
+    <script src="./main.js"></script>
+    <script src="./form.js"></script>
+    <script src="./hamburger.js"></script>
+  </body>
+</html>

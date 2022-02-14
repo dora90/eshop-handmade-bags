@@ -1,0 +1,108 @@
+.card-header {
+    text-align:center;
+    font-size:80px;
+    font-family: 'Noto Serif', serif;
+    background: -webkit-linear-gradient(rgb(73, 1, 73), rgb(250, 1, 84));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  
+  .card-title{
+    background: -webkit-linear-gradient(rgb(73, 1, 73), rgb(250, 1, 84));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    text-align:center;
+    font-family: 'Noto Serif', serif;
+    margin-top :400px;
+    font-size:30px;
+  }
+  
+  .container-card {
+  display: grid;
+  grid-gap: 35px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 55px;
+  }
+  
+  .card1 {
+  border: 1px solid rgb(73, 1, 73);  
+  width: 380px;
+  height: 450px;
+  display: grid;
+  grid-template-columns: 1fr;
+  border-radius: 38px;
+  margin-top: 50px;
+  }
+
+  .card1 img{
+        width: 100%;
+        height: 300px;
+        border-radius: 38px;
+    
+  }
+  
+  .card1:hover {
+    box-shadow: 0 8px 16px 0 rgb(73, 1, 73);
+  }
+  
+  .card-body{
+    margin-top: -400px;
+  }
+  
+  .favorite-btn, .card-button{
+    padding: 15px;
+    width:60%;
+    border-radius:15px;
+    background-color:rgb(216, 8, 122);
+    color:white;
+    margin-left:80px;
+    margin-top:-20px;
+    cursor: pointer;
+  }
+  
+  .favorite-btn:hover, .card-button:hover {
+    background-image: linear-gradient(to right, rgb(73, 1, 73) , rgb(250, 1, 84));
+    color:white;
+    box-shadow: 2px 2px 4px rgb(216, 8, 122);
+  }
+  
+  .more-themes{
+    text-align:center;
+    font-size:30px;
+    font-family: 'Noto Serif', serif;
+    background: -webkit-linear-gradient(rgb(73, 1, 73), rgb(250, 1, 84));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+  }
+
+  @media screen and (max-width: 950px) {
+    .container-card { 
+      
+      grid-template-columns: repeat(2, 1fr); 
+    }
+    .card1{
+      width: 280px;
+      height: 450px;
+    }
+    
+    .favorite-btn, .card-button{
+      margin-left:30px;
+      
+    }
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .container-card {
+       grid-template-columns: repeat(1, 1fr);
+      }
+    .card1{
+      width: 380px;
+      height: 450px;
+    }
+  
+  }
