@@ -29,6 +29,7 @@ let products = [
     id: 5,
     img: "./images/small5.jpg",
     price: 30,
+    inCart: 0,
   },
   {
     id: 6,
