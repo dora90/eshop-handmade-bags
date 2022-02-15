@@ -309,7 +309,16 @@ function deleteItemFromCart(pid) {
   let newcart = Object.values(productsInCart).filter((item) => item.id != pid);
   localStorage.setItem("productsInCart", JSON.stringify(newcart));
 
-  // totalCost()
+   newProductNumbers = parseInt(newProductNumbers);
+
+  if (newProductNumbers) {
+    localStorage.setItem("cartNumbers", newProductNumbers - 1);
+    document.querySelector(".bag span").textContent = newProductNumbers - 1;
+  } else {
+    localStorage.setItem("cartNumbers", 1);
+    document.querySelector(".bag span").textContent = 1;
+  }
+  
   displayCart();
 }
 
