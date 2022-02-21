@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Handmade Bags</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#" id="logo"><img src="../images/logo.png" alt="" /></a>
+      <ul id="main-menu">
+        <li><a href="../html/index.html">Home</a></li>
+        <li>
+          <a href="#">Products</a>
+          <div class="sub-menu">
+            <ul>
+              <li><a href="../html/smallbags.html">Bags</a></li>
+              <!-- <li><a href="../html/differentbags.html">Different Bags</a></li>
+              <li><a href="../html/special.html">Special Edition</a></li> -->
+              <li><a href="../html/wallet.html">Wallets</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- <li>
+          <a href="#">Themes</a>
+          <div class="sub-menu">
+            <ul>
+              <li><a href="../html/free.html">Free</a></li>
+              <li><a href="../html/extracharge.html">Extra Charge</a></li>
+            </ul>
+          </div>
+        </li> -->
+        <li><a href="../html/contact.html">Contact</a></li>
+        <li class="bag">
+          <a href="../html/shoppingbag.html">🛒 <span>0</span></a>
+        </li>
+      </ul>
+    </div>
+
+    <button class="hamburger">
+      <div class="bar"></div>
+    </button>
+    <nav class="mobile-nav">
+      <a href="#" id="logo1"><img src="../images/logo.png" alt="" /></a>
+      <li><a href="../html/index.html">Home</a></li>
+      <li><a href="../html/smallbags.html">Products</a></li>
+      <li><a href="../html/contact.html">Contact</a></li>
+      <li>
+        <a href="../html/shoppingbag.html">🛒 <span>0</span></a>
+      </li>
+    </nav>
+
+    <div id="hero">
+      <h2 id="hero-text">Super value deals <br />To all our products</h2>
+      <span
+        ><img src="../images/made-with-love.png" alt="made-with-love"
+      /></span>
+    </div>
+
+    <div class="header-main">
+      <video controls autoplay>
+        <source src="../video/video-1644432021.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <p>
+        We make handmade products from recyclable materials!<br />We deliver
+        them to your frond door in maximum 7 days!
+      </p>
+    </div>
+
+    <main class="main">
+      <h2>Our Products</h2>
+      <div class="card-main">
+        <img src="../images/bag.jpg" alt="Bags" />
+        <div class="container">
+          <h4>Bags</h4>
+        </div>
+      </div>
+      <div class="card-main">
+        <img src="../images/wallet.jpg" alt="Wallets" />
+        <div class="container">
+          <h4>Wallets</h4>
+        </div>
+      </div>
+    </main>
+
+    <div id="'feature" class="section-feature">
+      <div class="fe-box">
+        <img src="../images/undraw_Deliveries_2r4y.png" alt="free-shipping" />
+        <h3 class="feature-text">Free Shipping</h3>
+      </div>
+
+      <div class="fe-box">
+        <img
+          src="../images/undraw_Online_payments_re_y8f2.png"
+          alt="online-payment"
+        />
+        <h3 class="feature-text">Online Payment</h3>
+      </div>
+
+      <div class="fe-box">
+        <img src="../images/undraw_Active_support_re_b7sj.png" alt="support" />
+        <h3 class="feature-text">24/7 Support</h3>
+      </div>
+    </div>
+
+    <section class="product">
+      <h2 class="product-category">Best Selling</h2>
+      <button class="pre-btn">🢀</button>
+      <button class="nxt-btn">🢂</button>
+      <div class="product-container">
+        <div class="product-card">
+          <div class="product-image">
+            <img onclick="popupToggle3()" src="../images/dibags3.jpg" alt="" />
+          </div>
+          <div id="popup3">
+            <div class="slider-content">
+              <img src="../images/dibags3.jpg" alt="" />
+              <h2>White Bow</h2>
+              <h2>50€</h2>
+              <a class="close3" onclick="popupToggle3()">❌</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img onclick="popupToggle4()" src="../images/dibags6.jpg" alt="" />
+          </div>
+          <div id="popup4">
+            <div class="slider-content">
+              <img src="../images/dibags6.jpg" alt="" />
+              <h2>Ocean</h2>
+              <h2>45€</h2>
+              <a class="close4" onclick="popupToggle4()">❌</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img onclick="popupToggle5()" src="../images/se1bag.jpg" alt="" />
+          </div>
+          <div id="popup5">
+            <div class="slider-content">
+              <img src="../images/se1bag.jpg" alt="" />
+              <h2>Double Trouble</h2>
+              <h2>50€</h2>
+              <a class="close5" onclick="popupToggle5()">❌</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img onclick="popupToggle6()" src="../images/se4.jpg" alt="" />
+          </div>
+          <div id="popup6">
+            <div class="slider-content">
+              <img src="../images/se4.jpg" alt="" />
+              <h2>Queen's Heart</h2>
+              <h2>50€</h2>
+              <a class="close6" onclick="popupToggle6()">❌</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img onclick="popupToggle7()" src="../images/se5.jpg" alt="" />
+          </div>
+          <div id="popup7">
+            <div class="slider-content">
+              <img src="../images/se5.jpg" alt="" />
+              <h2>Pearls Lover No2</h2>
+              <h2>50€</h2>
+              <a class="close7" onclick="popupToggle7()">❌</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img onclick="popupToggle8()" src="../images/wallet3.jpg" alt="" />
+          </div>
+          <div id="popup8">
+            <div class="slider-content">
+              <img src="../images/wallet3.jpg" alt="" />
+              <h2>Disney</h2>
+              <h2>10€</h2>
+              <a class="close8" onclick="popupToggle8()">❌</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img onclick="popupToggle9()" src="../images/dibags11.jpg" alt="" />
+          </div>
+          <div id="popup9">
+            <div class="slider-content">
+              <img src="../images/dibags11.jpg" alt="" />
+              <h2>Rainbow</h2>
+              <h2>50€</h2>
+              <a class="close9" onclick="popupToggle9()">❌</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img onclick="popupToggle10()" src="../images/small3.jpg" alt="" />
+          </div>
+          <div id="popup10">
+            <div class="slider-content">
+              <img src="../images/small3.jpg" alt="" />
+              <h2>Blossom</h2>
+              <h2>30€</h2>
+              <a class="close10" onclick="popupToggle10()">❌</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img onclick="popupToggle11()" src="../images/small5.jpg" alt="" />
+          </div>
+          <div id="popup11">
+            <div class="slider-content">
+              <img src="../images/small5.jpg" alt="" />
+              <h2>Black and Gold</h2>
+              <h2>30€</h2>
+              <a class="close11" onclick="popupToggle11()">❌</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img onclick="popupToggle12()" src="../images/wallet1.jpg" alt="" />
+          </div>
+          <div id="popup12">
+            <div class="slider-content">
+              <img src="../images/wallet1.jpg" alt="" />
+              <h2>Platinum</h2>
+              <h2>12€</h2>
+              <a class="close12" onclick="popupToggle12()">❌</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img onclick="popupToggle13()" src="../images/se2.jpg" alt="" />
+          </div>
+          <div id="popup13">
+            <div class="slider-content">
+              <img src="../images/se2.jpg" alt="" />
+              <h2>Little Diamond</h2>
+              <h2>30€</h2>
+              <a class="close13" onclick="popupToggle13()">❌</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img onclick="popupToggle14()" src="../images/dibags7.jpg" alt="" />
+          </div>
+          <div id="popup14">
+            <div class="slider-content">
+              <img src="../images/dibags7.jpg" alt="" />
+              <h2>Fashionista</h2>
+              <h2>50€</h2>
+              <a class="close14" onclick="popupToggle14()">❌</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img onclick="popupToggle15()" src="../images/dibags4.jpg" alt="" />
+          </div>
+          <div id="popup15">
+            <div class="slider-content">
+              <img src="../images/dibags4.jpg" alt="" />
+              <h2>Magazine No2</h2>
+              <h2>50€</h2>
+              <a class="close15" onclick="popupToggle15()">❌</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="newsletter">
+      <div class="newstext">
+        <h4>Subscribe to Our Newsletters</h4>
+        <p>
+          Get E-mail updates about our latest bags and
+          <span>special offers</span>
+        </p>
+      </div>
+      <div class="newsletter-form">
+        <!-- <input type="text" placeholder="Your email address" /> -->
+        <button class="normal" onclick="popupToggle()">Subscribe</button>
+        <form action="/sign-up" method="post" id="form" class="form-body">
+          <div id="popup">
+            <div class="newsletter-content">
+              <h2>Join Now</h2>
+              <input type="text" placeholder="Your email address" />
+              <input type="submit" value="Sign up" id="email" />
+              <div id="error"></div>
+              <a class="close" onclick="popupToggle()">❌</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- 
+    <div class="afterheader">
+      <h1 class="titleafter">Follow the Steps</h1>
+      <ul class="listafter">
+        <li>Choose Style</li>
+        <li>Choose Theme</li>
+        <li>Leave the rest to us!</li>
+      </ul>
+    </div> -->
+
+    <div class="footer">
+      <div class="social-container">
+        <h3 class="title-social">Follow us</h3>
+        <a href="https://www.facebook.com/" class="facebook social">
+          <i class="fab fa-facebook fa-3x"></i>
+        </a>
+        <a href="https://www.instagram.com/" class="instagram social">
+          <i class="fab fa-instagram fa-3x"></i>
+        </a>
+        <a href="https://www.twitter.com/" class="twitter social">
+          <i class="fab fa-twitter fa-3x"></i>
+        </a>
+        <a href="https://www.pinterest.com/" class="pinterest social">
+          <i class="fab fa-pinterest fa-3x"></i>
+        </a>
+      </div>
+    </div>
+    
+    <div class="openm">
+    <div class="open-menu">
+      <div class="toggle-toggle">➕</div>
+      <li style="--i: 1">
+        <a href="../html/index.html">🏠</a>
+      </li>
+      <li style="--i: 2">
+        <a href="../html/smallbags.html">👜</a>
+      </li>
+      <li style="--i: 3">
+        <a href="../html/wallet.html">👛</a>
+      </li>
+      <li style="--i: 4">
+        <a href="../html/contact.html">📧</a>
+      </li>
+      <li style="--i: 5">
+        <a href="../html/shoppingbag.html">🛒</a>
+      </li>
+      
+    </div>
+    </div>
+
+    <div class="afterfooter">
+      <p>Designed and Developed by Theodora Nitsa</p>
+    </div>
+
+    <script src="../js/home.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/newsletter.js"></script>
+    <script src="../js/hamburger.js"></script>
+    <script src="../js/slider.js"></script>
+    <script src="../js/openmenu.js"></script>
+  </body>
+</html>
