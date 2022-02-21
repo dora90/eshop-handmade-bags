@@ -1,0 +1,259 @@
+.products-container{
+    max-width:650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top:50px;
+    /* display:flex;
+    flex-wrap:wrap; */
+    padding-bottom:100px;
+}
+
+.product-header{
+    width:150%;
+    max-width:750px;
+    display:flex;
+    justify-content:flex-start;
+    border-bottom: 4px solid rgb(190, 14, 117);
+    margin:0 auto;
+}
+
+
+
+.product-price{
+    display:flex;
+    align-items: center;
+    margin: 0 160px;
+    float: none;
+    
+}
+
+.product-quantity{
+    display:flex;
+    align-items: center;
+    margin: 0 0px;
+    float: none;
+    
+}
+
+.product-total{
+    
+    width:15%;
+    display:flex;
+    align-items: center;
+    margin: 0 100px;
+    float: none;
+    
+}
+
+ .products {
+    width:45%;
+    display:block;
+    justify-content:space-around;
+    align-items: center;
+    padding:10px 0;
+    border-bottom: 4px solid rgb(190, 14, 117);
+    /* border-bottom: 4px solid rgb(190, 14, 117); */
+}
+
+.basketTotalContainer{
+    display:flex;
+    /* justify-content:flex-end; */
+    width: 100%;
+    padding-left:480px;
+    font-size:25px;
+}
+
+.basketTotalTitle{
+    width:100%;
+    font-size:25px;
+}
+
+.basketTotal {
+    width:10%;
+    background-color:purple;
+    color:white;
+    padding:8px; 
+    width:50%; 
+    height:20%;
+    margin-top:40px;
+    cursor:pointer;
+    border-radius:8px;
+}
+
+.basketTotal:hover{
+    background-color:pink;
+    color:purple;
+}
+
+.icon{
+font-size: 25px;
+margin-left:10px;
+margin-right:10px;
+cursor:pointer;
+display:flex;
+flex-wrap:wrap;
+margin-top:10px;
+border-radius:8px;
+background-color:pink;
+}
+.icon:hover{
+    background-color:purple;;
+}
+
+.checkout{
+    position:relative;
+    display:inline-block;
+    font-family: 'Noto Serif', serif;
+    font-size:30px;
+    width:10%;
+    background-color:rgb(248, 85, 112);
+    color:white;
+    padding:8px; 
+    width:50%; 
+    height:20%;
+    margin-top:40px;
+    cursor:pointer;
+    border-radius:8px;
+    margin-left:670px;
+    overflow:hidden;
+    transition:0.2s;
+}
+
+.checkout:hover{
+    background:rgb(248, 85, 112);
+    color:rgb(83, 0, 83);
+    box-shadow: 0 0 10px rgb(248, 85, 112), 0 0 40px rgb(248, 85, 112), 0 0 80px rgb(248, 85, 112);
+}
+
+
+
+.wrapper {
+    background-color:white;
+    font-family: 'Noto Serif', serif;
+    padding:25px;
+    margin:25px auto 0;
+    box-shadow: 0px 0px 20px purple;
+    width:550px;
+    border-radius:8px;
+}
+
+.wrapper h2 {
+    background-color:#fcfcfc;
+    color:#c502a5;
+    font-size:24px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align:center;
+    border-radius:8px;
+}
+
+.form h4{
+    padding-bottom:5px;
+    color:#c502a5;
+}
+
+.input-group{
+    margin-bottom:8px;
+    width:70%;
+    position:relative;
+    display:flex;
+    flex-direction:row;
+    padding:15px 0;
+}
+
+.input-box{
+    width:100%;
+    margin-right:100px;
+    position:relative;
+}
+
+.input-box:last-child {
+    margin-right:0px;
+}
+
+.name{
+    padding: 14px 10px 14px 50px;
+    width:100%;
+    background-color:#fcfcfc;
+    border:px solid #00000033;
+    outline:none;
+    letter-spacing:1px;
+    transition:0.3s;
+    border-radius:3px;
+    color:#333;
+}
+
+.name:focus{
+    -webkit-box-shadow: 0 0 2px 1px #c502a5;
+    box-shadow: 0 0 2px 1px #c502a5;
+    -moz-box-shadow: 0 0 2px 1px #c502a5;
+    border: 1px solid #c502a5;
+}
+
+.radio{
+    display:none;
+}
+
+.input-box label{
+    width:50%;
+    padding:13px;
+    background-color:#fcfcfc;
+    display: inline-block;
+    text-align:center;
+    border-radius: 1px solid #c0bfbf;
+}
+
+.input-box label:first-of-type{ 
+    border-top-right-radius:3px;
+    border-bottom-left-radius: 3px;
+    border-right:none;
+}
+
+
+.input-box label:last-of-type{ 
+border-top-left-radius: 3px;
+border-bottom-left-radius: 3px;
+}
+
+.checkout-button{
+    width:100%;
+    background:transparent;
+    border:none;
+    background:#c502a5;
+    color:white;
+    padding:15px;
+    border-radius:4px;
+    font-size: 16px;
+    transition: all 0.35s ease;
+    cursor: pointer;
+}
+
+.checkout-button:hover{
+    background-color:purple;
+}
+#popup1{
+    position:fixed;
+    top:-100%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index:1000;
+    background-color: #ff96df;
+    width: 450px;
+    padding: 80px 50px 50px;
+    box-shadow: 0 15px 3px rgb(73, 1, 73);
+    transition: 0.5s;
+    border-radius: 18px;
+    visibility: hidden;
+  }
+  #popup1.action {
+    visibility:visible;
+    top:50%;
+  }
+
+  .close1{
+      position:absolute;
+  top:-350px;
+  right:-180px;
+  cursor: pointer;
+  font-size:30px;
+  }

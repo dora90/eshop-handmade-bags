@@ -1,0 +1,73 @@
+/* Style social media*/
+.social-container {
+    background-image: linear-gradient(to right, rgb(73, 1, 73) , rgb(250, 1, 84));
+    color:white;
+    padding-left:40em;
+    padding-top:4em;
+    height:200px;
+  }
+  
+  .title-social {
+    font-size:30px;
+    font-family: 'Noto Serif', serif;
+    padding-left:90px;
+  }
+  a.social {
+    margin: 0 1rem;
+    transition: transform 250ms;
+    display:inline-block;
+  }
+  
+  a.social:hover {
+    transform :translateY(-2px);
+    color:pink;
+  }
+  
+  a.facebook {
+    color :#0335a1;
+  }
+  
+  a.instagram {
+    color:white;
+  }
+  
+  a.twitter {
+    color:#6dbdff;
+  }
+  
+  a.pinterest {
+    color: #e60023;
+  }
+
+  @media screen and (max-width: 950px) {
+    
+    
+    .title-social  { 
+      margin-left:-450px;
+      }
+    
+      a.social {
+        margin-left:-180px;
+      }
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .social-container {
+      padding-left:10em;
+    padding-top:4em;
+    height:60px;
+    
+    }
+    
+    .title-social  { 
+      margin-left:-65px;
+      margin-top:-60px;
+      
+      }
+    
+      a.social {
+        font-size:10px;
+        margin-left:-2px;
+      }
+  }
