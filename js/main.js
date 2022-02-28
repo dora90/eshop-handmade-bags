@@ -157,7 +157,7 @@ for (let i = 0; i < carts.length; i++) {
   carts[i].addEventListener("click", () => {
     cartNumbers(products[i]);
     totalCost(products[i]);
-    newTotalCost(products[i]);
+    newData(products[i]);
   });
 }
 
@@ -253,7 +253,6 @@ Shopping Bag Total:
 </h4>
 <h4 class="basketTotal">
 ${cartCost},00€ 
-
 </h4>
 
 </div>
@@ -275,7 +274,7 @@ ${cartCost},00€
       </div>
       <div class="input-group">
       <div class="input-box">
-        <input type="email" placeholder="email" required class="name">
+        <input type="number" placeholder="Phone number" required class="name">
       </div>
       </div>
 
@@ -327,25 +326,31 @@ function deleteItemFromCart(pid) {
   }
 
   
-  newTotalCost()
+localStorage.setItem("cartNumbers" , JSON.stringify(JSON.parse(localStorage.getItem("cartNumbers"))-1))
+document.querySelector(".bag span").textContent = JSON.parse(localStorage.getItems("cartNumbers"))
+
+cartItems = JSON.parse(cartItems);
+let productContainer = document.querySelector(".products");
+
+var newData = {}
+var array= Object.values(cartItems)
+for (var i= 0 ; i < array.length; i++){
+  if (array[i].name !== obj.name) {
+    newData[i] = array[i]
+  }
+  if(array[i].name === obj.name){
+    localStorage.setItem("totalCost", JSON.stringify(JSON.parse(localStorage.getItem("totalCost"))-array[i].price))
+  }
+}
+productContainer.innerHTML = ""
+localStorage.setItem("productsInCart", JSON.stringify(newData))
+  
   displayCart();
 
   
 }
 
-// function newTotalCost(product) {
-//   let newCartCost = localStorage.getItem("newTotalCost");
 
-//   if (newCartCost != null) {
-//     newCartCost = parseInt(newCartCost);
-//     localStorage.setItem("newTotalCost", newCartCost - product.price);
-//   } else {
-//     localStorage.setItem("newTotalCost", product.price);
-//   }
-// console.log(newCartCost)
-//   deleteItemFromCart()
-//   displayCart()
-// }
 
 onLoadCartNumbers();
 displayCart();

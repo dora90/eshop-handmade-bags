@@ -7,7 +7,7 @@ form.addEventListener('submit', (e) => {
     if (!email.value.match(mailRegex)) {
       messages.push('Invalid email')
     }else {
-        messages.push('Your email is correct!')
+        messages.push('Your email has been sent!')
     }
    
   
@@ -18,3 +18,14 @@ form.addEventListener('submit', (e) => {
   
   
   });
+
+  function sendMail(params) {
+    var tempParams = {
+      form_name : document.getElementById("name").value,
+      message: document.getElementById("subject").value
+    }
+
+    emailjs.send('service_6vrngoj', 'template_udtmx1k', tempParams).then(function(res){
+      console.log("success", res.status)
+    })
+  }
