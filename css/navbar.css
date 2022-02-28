@@ -47,9 +47,15 @@
   }
   
   #main-menu a{
-      text-decoration:none;
-      color:rgb(241, 48, 184);
+    position:relative;
+    letter-spacing: 2px;
+    text-decoration:none;
+    color:rgb(253, 10, 172);
+    overflow:hidden;
+    
   }
+
+ 
   #main-menu li, ul{
   font-family: 'Noto Serif', serif; 
   margin: 0 15px;
@@ -60,6 +66,7 @@
   text-align: left;
   cursor: pointer;
   list-style: none;
+  transition:0.3s;
   }
   
   #main-menu ul{
@@ -87,8 +94,10 @@
   }
   
   #main-menu li:hover {
-    background-image: linear-gradient(to right,rgb(70, 3, 70), rgb(250, 1, 84));
-    border-radius: 8px;
+    border-radius: 8px; 
+    background:rgb(148, 4, 93);
+    color:rgb(248, 85, 153);
+    box-shadow: 0 0 10px rgb(253, 117, 212), 0 0 40px rgb(253, 117, 212), 0 0 80px rgb(253, 117, 212);
   }
   
   .sub-menu{
@@ -102,8 +111,10 @@
     }
    
     .sub-menu a {
+      text-align: center;
         float: none;
-        padding: 5px 10px;
+        padding: 5px ;
+        margin: -10px;
         text-decoration: none;
         display: block;
         text-align: left;
@@ -114,16 +125,16 @@
       position: absolute;
       background:#FFFFFF;
       border-radius: 8px;
-      width: 200px;
-      height: 150px;
-      padding:10px;
+      width: 150px;
+      height: 100px;
+      padding:-5px;
       }
   
       #main-menu li:hover .sub-menu ul {
       display: block;
-      margin: 10px;
-      text-align: left;
+      margin: 8px;
       color:white;
+      text-align: center;
       } 
 
     .bag span{

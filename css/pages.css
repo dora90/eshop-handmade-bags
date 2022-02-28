@@ -64,6 +64,8 @@ font-size:30px;
   }
   
   .favorite-btn, .card-button, .card-buttonw{
+    position: relative;
+    text-align: center;
     padding: 15px;
     width:60%;
     border-radius:15px;
@@ -73,17 +75,16 @@ font-size:30px;
     margin-top:-20px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    
   }
   
-  
-
-
 
   .favorite-btn:hover, .card-button:hover, .card-buttonw:hover {
     background-image: linear-gradient(to right, rgb(73, 1, 73) , rgb(250, 1, 84));
     color:white;
     box-shadow: 2px 2px 4px rgb(216, 8, 122);
   }
+
   
   .more-themes{
     text-align:center;
@@ -95,6 +96,7 @@ font-size:30px;
         -webkit-text-fill-color: transparent;
   }
 
+  
   @media screen and (max-width: 950px) {
     .container-card { 
       
@@ -110,8 +112,30 @@ font-size:30px;
       
     }
   }
+
+  alert {
+    position : fixed;
+    top:0px;
+    left:700px;
+    width:250px;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    
+    font-family: 'Noto Serif', serif;
+    font-size:20px;
+  }
   
-  
+  alert{
+    text-align:center;
+    padding: 15px 10px;
+    background:#111;
+    color:rgb(255, 103, 154);
+    border-radius:5px;
+    margin:5px 0px;
+  }
+
+
   @media screen and (max-width: 600px) {
     .container-card {
        grid-template-columns: repeat(1, 1fr);
