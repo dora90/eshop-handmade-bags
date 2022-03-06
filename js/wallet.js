@@ -197,14 +197,14 @@ for (let i = 0; i < cart4.length; i++) {
   
     // if (newCartCost != null) {
     //   newCartCost = parseInt(newCartCost);
-    //   localStorage.setItem("newTotalCost", newCartCost -(products.price * newProductNumbers ));
+    //   localStorage.setItem("newTotalCost" , JSON.stringify(JSON.parse(localStorage.getItem("totalCost"))-(products[i].price* newProductNumbers)))
     // } else {
     //   localStorage.setItem("newTotalCost", products.price * newProductNumbers );
     // }
   
     
     displayCart();
-  
+  totalCost()
     
   }
   

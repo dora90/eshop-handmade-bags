@@ -1,4 +1,8 @@
 
 function notifySuccess() {
-    alert("You add a Product!")
+    Swal.fire(
+        'Good job!',
+        'You add a Product!',
+        'success'
+      )
 }
