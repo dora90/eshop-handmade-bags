@@ -113,8 +113,8 @@
     .sub-menu a {
       text-align: center;
         float: none;
-        padding: 5px ;
-        margin: -10px;
+        padding: 20px ;
+        margin: -15px;
         text-decoration: none;
         display: block;
         text-align: left;
@@ -125,8 +125,8 @@
       position: absolute;
       background:#FFFFFF;
       border-radius: 8px;
-      width: 150px;
-      height: 100px;
+      width: 200px;
+      height: 120px;
       padding:-5px;
       }
   

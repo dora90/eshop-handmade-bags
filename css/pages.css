@@ -63,7 +63,21 @@ font-size:30px;
     margin-top: -400px;
   }
   
-  .favorite-btn, .card-button, .card-buttonw{
+
+   .heartbtn {
+    font-size:60px;
+    margin-left:20px;
+    margin-top:-100px;
+    cursor:pointer;
+    color:rgb(216, 8, 122);
+    
+  }
+
+
+  .card-button, .card-buttonw, .heartbtn {
+    justify-content:space-evenly;
+  }
+   .card-button, .card-buttonw{
     position: relative;
     text-align: center;
     padding: 15px;
@@ -150,3 +164,5 @@ font-size:30px;
     }
   
   }
+
+  
