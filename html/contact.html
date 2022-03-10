@@ -69,20 +69,26 @@
       <li><a href="../html/shoppingbag.html">🛒</a></li>
     </nav>
  
-
+    <div class="wrapper-form">
+      <div class="neon-wrapper">
+        <span class="txt-neon">Send us your Message</span>
+        <span class="gradient"></span>
+        <span class="dodge"></span>
+      </div>
+    </div>
+ 
 <section class="form1">
+  
 <div class="imgBx">
     <img src="../images/Personal_email.png">
 </div>
 <div class="contentBx">
     <div class="formBx">
-        <h2 class="h2-form">Send us your Message</h2>
         <form action="/sign-up" method="post" id="form" class="form">
             <div class="form-body">
-              <label for="name" class="label" id="name" >Full Name</label>
+              <label for="fromName" class="label" id="name" >Full Name</label>
               <input
                 type="text"
-                
                 name="name"
                 placeholder="Full name"
                 autocomplete="on"
@@ -105,7 +111,9 @@
                 id="subject"
                 name="subject"
                 placeholder="Your Message"
-              ></textarea>
+              >
+            </textarea>
+              
             </div>
     
             <button onclick="sendMail()" type="submit" id="btn">Submit</button>
