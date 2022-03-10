@@ -267,15 +267,15 @@ ${cartCost},00€
       <h4>Personal Data</h4>
       <div class="input-group">
       <div class="input-box">
-        <input type="text" placeholder="Full Name" required class="name">
+        <input type="text" id="fullname" placeholder="Full Name" required class="name">
       </div>
       <div class="input-box">
-        <input type="text" placeholder="Address" required class="name">
+        <input type="text" placeholder="Address" id="address" required class="name">
       </div>
       </div>
       <div class="input-group">
       <div class="input-box">
-        <input type="number" placeholder="Phone number" required class="name">
+        <input type="number" placeholder="Phone number" id ="phone" required class="name">
       </div>
       </div>
       <div class="input-group">
@@ -283,16 +283,18 @@ ${cartCost},00€
       <h4>Payment Details</h4>
             <div class="input-group">
             <div class="input-box">
-            <input type="text" class="name" placeholder="card number" required >
+            <input type="text" class="name" placeholder="card number" id="card-number" required >
             </div>
             </div>
             
       <div class="input-group">
       <div class="input-box">   
-      <button class="checkout-button" type="submit">Pay Now ${cartCost},00€</button>
+      <button onclick="AlertNotify()" class="checkout-button" type="submit">Pay Now ${cartCost},00€</button>
+      
       </div>
       <div>
       </form>
+      
 </div>
 </div>         
 <a class="close1" onclick="Toggle1()">❌</a>
@@ -301,9 +303,24 @@ ${cartCost},00€
     </div>
 `;
   }
-  
+  // document.getElementsByClassName("checkout-button").onclick = alert("Thank you for your order!")
+
 }
 
+
+
+// function sendMail1(params) {
+//   var tempParams = {
+//     from_name : document.getElementById("#fullname").value,
+//     address: document.getElementById("#address").value,
+//     phone: document.getElementById("#phone").value,
+//     card_number: document.getElementById("#card-number").value
+//   }
+
+//   emailjs.send('service_6vrngoj', 'template_udtmx1k', tempParams).then(function(res){
+//     console.log("success", res.status)
+//   })
+// }
 function deleteItemFromCart(pid) {
   let productsInCart = JSON.parse(localStorage.getItem("productsInCart"));
   let newcart = Object.values(productsInCart).filter((item) => item.id != pid);
@@ -370,3 +387,10 @@ function Toggle1(){
     const popup1 = document.getElementById('popup1')
     popup1.classList.toggle('action')
 }
+
+function AlertNotify(){
+  alert("Thank you for your order!")
+}
+
+
+

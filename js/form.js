@@ -21,7 +21,7 @@ form.addEventListener('submit', (e) => {
 
   function sendMail(params) {
     var tempParams = {
-      form_name : document.getElementById("name").value,
+      from_name : document.getElementById("fromName").value,
       message: document.getElementById("subject").value
     }
 
@@ -29,3 +29,13 @@ form.addEventListener('submit', (e) => {
       console.log("success", res.status)
     })
   }
+
+  // let btnClear = document.querySelector('#btn')
+  // let inputs = document.querySelectorAll('input')
+  // let textareas = document.getElementById('#subject')
+
+  // btnClear.addEventListener('click' , () => {
+  //   inputs.forEach(input => input.value = '')
+  //   textareas.value= ''
+  // })
+

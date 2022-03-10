@@ -204,7 +204,7 @@ for (let i = 0; i < cart4.length; i++) {
   
     
     displayCart();
-  totalCost()
+  // totalCost()
     
   }
   
