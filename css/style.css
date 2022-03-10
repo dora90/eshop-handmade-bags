@@ -536,104 +536,158 @@ border-bottom-left-radius: 0; */
 
    /*style the form*/
 
-   .form1{
-     position:relative;
-     width:100%;
-     height: 100vh;
-     display:flex;
-   }
-
-   .form1 .imgBx{
-     position:relative;
-     width:50%;
-     height:100%
-   }
-
-   .form1 .imgBx:before {
-     content:'';
-     position:absolute;
-     top:0;
-     left:0;
-     width:115%;
-     height:100%;
-     
-   }
-
-   .form1 .imgBx img{
-    position:absolute;
-    margin-top:150px;
-    left:0;
-    width:750px;
-    height:500px;
-    object-fit:cover;
-  }
-
-  .form1 .contentBx{
+  .wrapper-form{
     display:flex;
-    justify-content: center;
     align-items:center;
-    width:50%;
-    height:100%;
-
-  }
-  #error{
-    font-size:20px;
-    padding:10px;
-    border-radius: 18px;
-    width:90%;
-    color:rgb(247, 3, 137);
-   
+    justify-content:center;
+    background:black;
   }
 
-
-  
-  .form div input, textarea {
-    width: 80%;
-    height: 40px;
-    border-radius: 8px;
-    outline: none;
-    border: 2px solid #700b63;
-    padding: 0 30px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  textarea {
-    height:120px;
-  }
-  
-  .label {
-    color:#700b63;
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .form div {
-    position: relative;
-    margin-bottom: 15px;
-  }
-  
-  input:focus {
-    border: 2px solid #ff96df;
-  }
-  
-  #btn{
-    font-family: 'Noto Serif', serif;
+  .txt-neon{
     color:white;
-    margin-top: 15px;
-    width:95%;
-    height: 45px;
-    border-radius: 8px;
-    font-size: 20px;
-    cursor: pointer;
-    background-color: rgb(139, 0, 77);
+    background:black;
+    font-family: 'Noto Serif', serif;
+    font-size:50px;
+    text-transform:uppercase;
   }
 
-  
-  #btn:hover {
-   color:white;
-   background-image: linear-gradient(to right,rgb(250, 1, 84), rgb(255, 104, 175) );
-  } 
+  .txt-neon::before {
+    content :'Send us your Message';
+    position:absolute;
+    mix-blend-mode:difference;
+    filter:blur(1px);
+  }
 
+  .neon-wrapper{
+    display:inline-flex;
+    filter: brightness(200%);
+    overflow:hidden;
+  }
+
+  .gradient{
+    background: linear-gradient(114.5793141156962deg, rgba(234,6,106,1) 4.927083333333334%, rgb(2, 140, 145) 97.84374999999999%);
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    mix-blend-mode:multiply;
+  }
+
+  .dodge {
+    background: radial-gradient(circle,white,black 35%) center / 25% 25%;
+    position:absolute;
+    top:-100%;
+    left:-100%;
+    right:0;
+    bottom:0;
+    mix-blend-mode:color-dodge;
+    animation:dodge-area 3s linear infinite;
+  }
+
+  @keyframes dodge-area {
+    to {
+      transform : translate(50%,50%);
+    }
+  }
+
+  .form1{
+    position:relative;
+    width:100%;
+    height: 100vh;
+    display:flex;
+  }
+
+  .form1 .imgBx{
+    position:relative;
+    width:50%;
+    height:100%
+  }
+
+  .form1 .imgBx:before {
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:115%;
+    height:100%;
+    
+  }
+
+  .form1 .imgBx img{
+   position:absolute;
+   margin-top:150px;
+   left:0;
+   width:750px;
+   height:500px;
+   object-fit:cover;
+ }
+
+ .form1 .contentBx{
+   display:flex;
+   justify-content: center;
+   align-items:center;
+   width:80%;
+   height:100%;
+
+ }
+ #error{
+   font-size:20px;
+   padding:10px;
+   border-radius: 18px;
+   width:90%;
+   color:rgb(247, 3, 137);
+  
+ }
+
+
+ 
+ .form div input, textarea {
+   width: 500px;
+   height: 40px;
+   border-radius: 8px;
+   outline: none;
+   border: 2px solid #700b63;
+   padding: 0 30px;
+   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+ }
+ 
+ textarea {
+   height:120px;
+ }
+ 
+ .label {
+   color:#700b63;
+   display: block;
+   margin-bottom: 5px;
+ }
+ 
+ .form div {
+   position: relative;
+   margin-bottom: 15px;
+ }
+ 
+ input:focus {
+   border: 2px solid #ff96df;
+ }
+ 
+ #btn{
+   font-family: 'Noto Serif', serif;
+   color:white;
+   margin-top: 15px;
+   width:100%;
+   height: 45px;
+   border-radius: 8px;
+   font-size: 20px;
+   cursor: pointer;
+   background-color: rgb(139, 0, 77);
+ }
+
+ 
+ #btn:hover {
+  color:white;
+  background-image: linear-gradient(to right,rgb(250, 1, 84), rgb(255, 104, 175) );
+ } 
   @media screen and (max-width: 950px) {
     .form1{
       width:80%;
@@ -649,12 +703,16 @@ border-bottom-left-radius: 0; */
       margin-top:100px;
       
     }
+
+    #btn{
+      margin-top:300px;
+    }
   }
   
   
   @media screen and (max-width: 600px) {
     .form1{
-      width:80%;
+      width:70%;
       
     }
 
@@ -664,8 +722,12 @@ border-bottom-left-radius: 0; */
     }
 
     .h2-form{
-      margin-top:120px;
+      margin-bottom:500px;
       font-size:20px;
+    }
+
+    #btn{
+      margin-top:250px;
     }
   }
 
