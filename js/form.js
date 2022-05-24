@@ -2,6 +2,8 @@ const email =document.getElementById('email');
 const errorElement = document.getElementById('error')
 const mailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
 
+
+//form validation
 form.addEventListener('submit', (e) => {
     let messages = []
     if (!email.value.match(mailRegex)) {
@@ -19,6 +21,7 @@ form.addEventListener('submit', (e) => {
   
   });
 
+//conectign with emailJs
   function sendMail(params) {
     var tempParams = {
       from_name : document.getElementById("fromName").value,
