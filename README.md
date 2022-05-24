@@ -31,4 +31,4 @@ Ecommerce website. A website that allows people to buy handmade bags and wallets
 
 **Limitations
 
-Open it on Windows Edge for better User Expirience
+Open it on Windows Edge for better User Experience
