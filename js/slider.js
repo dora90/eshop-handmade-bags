@@ -1,3 +1,5 @@
+//image slider module pop-up
+
 function popupToggle3(){
     const popup3 = document.getElementById('popup3')
     popup3.classList.toggle('active')
