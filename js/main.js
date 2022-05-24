@@ -209,6 +209,7 @@ function setItems(product) {
   localStorage.setItem("productsInCart", JSON.stringify(cartItems));
 }
 
+//find total cost
 function totalCost(product) {
   let cartCost = localStorage.getItem("totalCost");
 
@@ -223,6 +224,7 @@ function totalCost(product) {
   }
 }
 
+//add item
 function displayCart() {
   let cartItems = localStorage.getItem("productsInCart");
   cartItems = JSON.parse(cartItems);
@@ -321,11 +323,14 @@ ${cartCost},00€
 //     console.log("success", res.status)
 //   })
 // }
+
+//delete item
 function deleteItemFromCart(pid) {
   let productsInCart = JSON.parse(localStorage.getItem("productsInCart"));
   let newcart = Object.values(productsInCart).filter((item) => item.id != pid);
   localStorage.setItem("productsInCart", JSON.stringify(newcart));
   localStorage.setItem("totalCost" , JSON.stringify(JSON.parse(localStorage.getItem("totalCost"))-item[i].price))
+  
 //   localStorage.setItem("cartNumbers" , JSON.stringify(JSON.parse(localStorage.getItem("cartNumbers"))-1))
 //   document.querySelector(".bag span").textContent = JSON.parse(localStorage.getItem("cartNumbers"))
 //   let cartItems = localStorage.getItem("productsInCart");
