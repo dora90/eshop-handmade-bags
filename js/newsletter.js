@@ -1,3 +1,5 @@
+//pop-up window
+
 function popupToggle(){
     const popup = document.getElementById('popup')
     popup.classList.toggle('active')
@@ -7,6 +9,8 @@ const email =document.getElementById('email');
 const errorElement = document.getElementById('error')
 const mailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
 
+
+//email validation
 form.addEventListener('submit', (e) => {
     let messages = []
     if (!email.value.match(mailRegex)) {
