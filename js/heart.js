@@ -1,3 +1,5 @@
+//change color to the heart
+
 function main(element) {
     var currentColor = element.style.color
 
