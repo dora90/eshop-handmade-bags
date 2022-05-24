@@ -21,7 +21,7 @@ form.addEventListener('submit', (e) => {
   
   });
 
-//conectign with emailJs
+//connectign with emailJs
   function sendMail(params) {
     var tempParams = {
       from_name : document.getElementById("fromName").value,
