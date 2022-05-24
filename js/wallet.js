@@ -77,6 +77,8 @@ for (let i = 0; i < cart4.length; i++) {
     localStorage.setItem("productsInCart", JSON.stringify(cartItems));
   }
   
+
+//find total cost
   function totalCost(product) {
     let cartCost = localStorage.getItem("totalCost");
   
@@ -91,6 +93,7 @@ for (let i = 0; i < cart4.length; i++) {
     }
   }
   
+//add item
   function displayCart() {
     let cartItems = localStorage.getItem("productsInCart");
     cartItems = JSON.parse(cartItems);
@@ -175,6 +178,8 @@ for (let i = 0; i < cart4.length; i++) {
     }
   }
   
+
+//delete item
   function deleteItemFromCart(pid) {
     let productsInCart = JSON.parse(localStorage.getItem("productsInCart"));
     let newcart = Object.values(productsInCart).filter((item) => item.id != pid);
